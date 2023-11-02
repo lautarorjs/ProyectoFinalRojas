@@ -5,9 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>hola</h1>
+    <h1>Bienvenido a Madre Rustica</h1>
+    <div class="conteiner">
+        <div class="card">
+            <img src="./images/pan-con-masa-madre-kBNB--1200x630@abc.jpg" alt="Producto 1">
+            <p class="description">Pan Blanco</p>
+            <p class="price">$900</p>
+            <button class="btn panBlanco" onclick="agregarAlCarrito('panBlanco')">Agregar al carrito</button>
+        </div>
+    
+        <div class="card">
+            <img src="./images/pan_integral_de_masa_madre_700.jpg" alt="Producto 2">
+            <p class="description">Pan Negro</p>
+            <p class="price">$1000</p>
+            <button class="btn panNegro" onclick="agregarAlCarrito('panNegro')">Agregar al carrito</button>
+        </div>
+    
+        <div class="card">
+            <img src="./images/pizza-masa-madre_5.jpg.webp" alt="Producto 3">
+            <p class="description">Pizzas</p>
+            <p class="price">$3200</p>
+            <button class="btn pizza" onclick="agregarAlCarrito('pizza')">Agregar al carrito</button>
+        </div>
+    </div>
+    <div>
+        <h2>Carrito de Compras</h2>
+        <ul id="carrito"></ul>
+    </div>
+    <script src="main.js"></script>
 </body>
-<script src="main.js"></script>
 </html>
