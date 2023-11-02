@@ -8,32 +8,19 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>Bienvenido a Madre Rustica</h1>
-    <div class="conteiner">
-        <div class="card">
-            <img src="./images/pan-con-masa-madre-kBNB--1200x630@abc.jpg" alt="Producto 1">
-            <p class="description">Pan Blanco</p>
-            <p class="price">$900</p>
-            <button class="btn panBlanco" onclick="agregarAlCarrito('panBlanco')">Agregar al carrito</button>
-        </div>
-    
-        <div class="card">
-            <img src="./images/pan_integral_de_masa_madre_700.jpg" alt="Producto 2">
-            <p class="description">Pan Negro</p>
-            <p class="price">$1000</p>
-            <button class="btn panNegro" onclick="agregarAlCarrito('panNegro')">Agregar al carrito</button>
-        </div>
-    
-        <div class="card">
-            <img src="./images/pizza-masa-madre_5.jpg.webp" alt="Producto 3">
-            <p class="description">Pizzas</p>
-            <p class="price">$3200</p>
-            <button class="btn pizza" onclick="agregarAlCarrito('pizza')">Agregar al carrito</button>
-        </div>
+    <div class="header">
+        <h1>Bienvenido a Madre Rustica</h1>
+        <p id="emoji-carrito" style="font-size: 40px; cursor: pointer;" onclick="mostrarCarrito()">&#128722;</p>
+        <p id="cantidad-carrito">0</p>
     </div>
-    <div>
-        <h2>Carrito de Compras</h2>
-        <ul id="carrito"></ul>
+    <div class="conteiner" id="contenedor">
+    </div>
+    <div id="carrito-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarCarrito()">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <ul id="carrito"></ul>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>
