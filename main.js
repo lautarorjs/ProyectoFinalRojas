@@ -34,11 +34,19 @@ function actualizarCarrito() {
         nuevoProducto.innerText = `${producto.nombre} - $${producto.precio}`;
         lista.appendChild(nuevoProducto);
     });
+
     
     let cantidadCarrito = document.getElementById("cantidad-carrito");
     cantidadCarrito.innerText = carrito.length;
 }
 
+let guardarCarrito = document.getElementById("guardarCarrito");
+guardarCarrito.addEventListener("click", guardaLocal);
+function guardaLocal(){
+    let carritoEnJSON = JSON.stringify(carrito);
+    console.log(typeof carritoEnJSON)
+    localStorage.setItem("carrito", carritoEnJSON)
+}
 
 function mostrarCarrito() {
     let modal = document.getElementById("carrito-modal");
@@ -46,7 +54,6 @@ function mostrarCarrito() {
 }
 
 function cerrarCarrito() {
-    // Cerrar el modal de carrito
     let modal = document.getElementById("carrito-modal");
     modal.style.display = "none";
 }

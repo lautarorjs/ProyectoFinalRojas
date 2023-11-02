@@ -10,16 +10,20 @@ h1{
     color: red;
 }
 
+.guardarCarrito{
+    margin-left: 35px;
+    margin-bottom: 50px;
+}
+
 .conteiner{
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 35px;
+    padding-top: 5px;
 }
-/* Estilo inicial del modal */
 .modal {
     display: none;
-    /* Agrega otros estilos necesarios para el modal, como posición, colores, etc. */
+    
 }
 
 .card {
@@ -59,13 +63,10 @@ h1{
     background-color: #ff5733; 
 }
 
-/*    Carrito de Compras     */
 h2{
     font-size: 40px;
     color: red;
     text-align: center;
 }
 
-/* ul li{
 
-} */
